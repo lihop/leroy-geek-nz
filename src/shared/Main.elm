@@ -1,12 +1,13 @@
 import Effects exposing (Never)
-import AwesomeIcon exposing (init, update, view)
 import StartApp
 import Task
+
+import IconicLink exposing (init, update, view)
 
 
 app =
     StartApp.start
-        { init = init "cog" 200
+        { init = init "github" "https://github.com/lihop" "lihop" 200
         , update = update
         , view = view
         , inputs = []
