@@ -21,7 +21,7 @@ integrousCss path integrity crossorigin =
         [ rel "stylesheet"
         , href path
         , property "integrity" integrity
-        , property "crossorigin" crossorigin
+        , property "crossOrigin" crossorigin
         ] []
 
 
