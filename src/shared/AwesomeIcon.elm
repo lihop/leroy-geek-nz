@@ -7,7 +7,7 @@ of an icon in the font awesome library sans the "fa-" prefix.
 
 import Easing exposing (ease, easeOutBounce, float)
 import Effects exposing (Effects)
-import Helper exposing ((=>), css)
+import Helper exposing ((=>), css, fontawesome)
 import Html exposing (..)
 import Html.Attributes exposing (..)
 import Html.Events exposing (onMouseOver)
@@ -107,8 +107,6 @@ toOffset animationState =
 view : Signal.Address Action -> Model -> Html
 view address model =
     let
-        fontawesome =
-            css "https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
         angle =
             model.angle + toOffset model.animationState
         iconStyle =
