@@ -56,6 +56,7 @@ view : Signal.Address Action -> Model -> Html
 view address model =
     div []
       [ bootstrap
+      , Helper.forkMeOnGitHub
       , div [ class "container" ]
           [ div [ class "col-md-8 col-md-offset-1", style <| (size 100 5) ]
               [ text "Leroy Hopson" ]
