@@ -19,3 +19,4 @@ executable leroy-geek-nz
   build-depends:       base >= 4.7 && < 5
                      , scotty
                      , wai-extra
+                     , wai-middleware-static

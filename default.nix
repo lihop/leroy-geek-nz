@@ -37,6 +37,8 @@ stdenv.mkDerivation rec {
   installPhase = ''
     mkdir -p $out/static
     cp -r ./static/* $out/static
+    mkdir -p $out/assets
+    cp -r ./assets/* $out/assets
     cp ${backend}/bin/* $out
   '';
 }
