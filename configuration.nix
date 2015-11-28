@@ -5,7 +5,6 @@ in
 {
   environment.systemPackages = with pkgs; [
     lgnz
-    nmap
   ];
 
   networking.firewall.allowedTCPPorts = [ 3000 ];

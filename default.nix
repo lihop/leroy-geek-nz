@@ -13,9 +13,7 @@ stdenv.mkDerivation rec {
     backend
     cacert
     elmPackages.elm
-    ghc
     git
-    stack
   ];
 
   # Required by elm-make. See: https://github.com/elm-lang/elm-make/issues/33
