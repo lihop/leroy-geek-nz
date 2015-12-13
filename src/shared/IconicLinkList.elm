@@ -61,7 +61,7 @@ update message model =
                         |> List.map subUpdate
                         |> List.unzip
             in
-                ( { model | iconicLinkList <- newIconicLinkList }
+                ( { model | iconicLinkList = newIconicLinkList }
                 , batch fxList
                 )
 
